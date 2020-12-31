@@ -18,6 +18,9 @@ section{
     background: #111;
     transition: 0.5s;
 }
+.banner.active{
+    right: 300px;
+}
 header{
     position: absolute;
     top: 0;
@@ -50,7 +53,7 @@ header .logo a{
 .toggle.active{
     background: url(./assets/close.png);
     background-repeat: no-repeat;
-    background-size: -25px;
+    background-size: 25px;
     background-position: center;
     cursor: pointer;
 }
@@ -154,4 +157,20 @@ section video{
     color:#111;
     font-size: 24px;
     text-transform: capitalize;
+}
+@media (max-width: 991px)
+{
+    section,
+    section header{
+        padding: 40px;
+    }
+    .text{
+        padding-top: 30px;
+    }
+    .text h2{
+        font-size: 3em;
+    }
+    .text h3{
+        font-size: 1.75em;
+    }
 }

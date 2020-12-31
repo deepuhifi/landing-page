@@ -9,11 +9,11 @@
 <body>
     <div class="menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#" onclick="toggleMenu();">About</a></li>
             <li><a href="https://bit.ly/39qxzqk" target="_blank">Youtube</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" onclick="toggleMenu();">Team</a></li>
+            <li><a href="#" onclick="toggleMenu();">Contact Us</a></li>
         </ul>
     </div>
     <section class="banner">
@@ -38,7 +38,9 @@
     <script type="text/javascript">
         function toggleMenu(){
             var menuToggle = document.querySelector('.toggle');
+            var banner = document.querySelector('.banner');
             menuToggle.classList.toggle('active');
+            banner.classList.toggle('active');
         }
     </script>
 </body>
