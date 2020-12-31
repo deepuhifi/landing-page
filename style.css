@@ -164,9 +164,6 @@ section video{
     section header{
         padding: 40px;
     }
-    .text{
-        padding-top: 30px;
-    }
     .text h2{
         font-size: 3em;
     }
