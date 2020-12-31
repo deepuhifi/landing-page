@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Trendy Tech</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="https://bit.ly/39qxzqk" target="_blank">Youtube</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo"><a href="https://www.youtube.com/watch?v=xEAu9KKeWqg" target="_blank">Trendy Tech</a></h2> 
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <video src="./assets/vide.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>let's innovate</h2>
+            <h3>even More Trendier</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatum tempore, ratione.</p>
+            <a href="https://bit.ly/39qxzqk" target="_blank">Join Us</a>
+        </div>
+        <ul class="sci">
+            <li><a href="https://instagram.com/trendy_t3ch" target="_blank"><img src="./assets/instagram.png"></a></li>
+            <li><a href="https://twitter.com/trendy_t3ch" target="_blank"><img src="assets/twitter.png"></a></li>
+            <li><a href="https://bit.ly/39qxzqk" target="_blank"><img src="./assets/yt.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
